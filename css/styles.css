@@ -1,0 +1,194 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-family: "Roboto",
+            sans-serif;
+        color: #434455;
+        background-color: #FFFFFF;
+}
+
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10px;
+}
+.hidden {
+    display: none;
+}
+
+
+.container {
+   max-width: 320px;
+   padding-left: 16px;
+   padding-right: 16px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo.header-logo{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        display: flex;
+            align-items: center;
+
+}
+.logo-part{
+        color: #2e2f42;
+        display: flex;
+            align-items: center;
+}
+
+.title-main{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
+}
+.section-one,.section-two,.section-three,.section-four{
+    padding-top: 48px ;
+    padding-bottom: 48px;
+}
+
+.nav-list{
+display: none;
+}
+.contacts{
+    display: none;
+}
+
+.open-mobile-menu-btn{
+    border: none;
+    background-color: transparent;
+    stroke: #111;
+    line-height: 0;
+
+}
+
+
+@media screen and (min-width:768px){
+    .container{
+     max-width: 736px;
+    }
+
+    .section-one,
+        .section-two,
+        .section-three,
+        .section-four {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        .open-mobile-menu-btn {
+            display: none;}
+                
+
+     .header-nav{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        margin-right: 121px;
+         }
+
+        .nav-list {
+        display: flex;
+            align-items: center;
+            gap: 40px;
+         }
+            
+        .contacts {
+        display: flex;
+        flex-grow: 1;
+            gap: 40px;
+            font-style: normal;
+                
+        }
+}   
+
+
+
+
+@media screen and (min-width:1158px) {
+    .container {
+        max-width: 736px;
+padding-left: 15px;
+    padding-right: 15px;
+
+    }
+
+    .section-one,
+    .section-two,
+    .section-three,
+    .section-four {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+.logo {
+    margin-right: 76px;
+}
+     .contacts{
+        margin-right: 332px;
+     }
+}
